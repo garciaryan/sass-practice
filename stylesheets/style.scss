@@ -1,11 +1,24 @@
-$default-color : #6eddc2;
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+$defaultColor : #6eddc2;
+$textFont: 'Press Start 2P', sans-serif;
+$textTwo: 'Raleway', sans-serif;
+
+@mixin universals {
+  height: 100%;
+  width: 100%;
+}
+
+
+p {
+  font-family: $textTwo;
+  background-color: #fff;
+}
 
 body {
-  font: {
-    size: 40px;
-    family: cursive;
-  }
+  font-family: $textFont;
   background : {
-    color: $default-color;
+    color: lighten($defaultColor, 20%);
   }
+  @include universals;
 }
