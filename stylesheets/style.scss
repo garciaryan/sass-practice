@@ -3,7 +3,9 @@ $default-color : #6eddc2;
 body {
   font: {
     size: 40px;
+    family: cursive;
+  }
+  background : {
     color: $default-color;
-
   }
 }
