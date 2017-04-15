@@ -1,15 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
+// Variables
 $defaultColor : #6eddc2;
 $textFont: 'Press Start 2P', sans-serif;
 $textTwo: 'Raleway', sans-serif;
+
+
+// Mixins
+@mixin borders {
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+
 
 @mixin universals {
   height: 100%;
   width: 100%;
 }
 
-
+//BODY
 p {
   font-family: $textTwo;
   background-color: #fff;
@@ -21,4 +31,15 @@ body {
     color: lighten($defaultColor, 20%);
   }
   @include universals;
+}
+
+img {
+  display: block;
+  @include borders;
+  .pic2{
+    @extend img;
+  }
+  .pic3 {
+    @extend img;
+  }
 }

@@ -10,4 +10,9 @@ body {
   height: 100%;
   width: 100%; }
 
+img, img .pic2, img .pic3 {
+  display: block;
+  border: 1px solid #000;
+  border-radius: 50%; }
+
 /*# sourceMappingURL=style.css.map */
